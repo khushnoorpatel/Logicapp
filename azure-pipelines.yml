@@ -28,4 +28,6 @@ steps:
     resourceGroupName: 'PersistRG'
     location: 'East Asia'
     templateLocation: 'Linked artifact'
+    csmFile: '$(Build.ArtifactStagingDirectory)\**\LogicApp.json'
+    csmParametersFile: '$(Build.ArtifactStagingDirectory)\**\LogicApp.parameters.json'
     deploymentMode: 'Incremental'
